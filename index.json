@@ -1,0 +1,32 @@
+{
+    "cancelation_token": "",
+    "steps": [
+      {
+        "action": "send",
+        "template": "MANTHAQ42GMPF5PN2G0428ERE8MC",
+        "recipient": "shivansh.arora973@gmail.com"
+      },
+      {
+        "action": "delay",
+        "until": "1 minute"
+      },
+      {
+        "action": "send",
+        "message":{
+          "to":{
+            "email":"demo.user0675@gmail.com"
+          },
+          "content":{
+            "title":"Track your daily water consumption",
+            "body":"Keep a watch on your daily water consumption now !!"
+          },
+          "routing":{
+        "method":"single",
+        "channels":[
+          "email"
+        ]
+      }
+        }
+      }
+    ]
+  }
